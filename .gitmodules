@@ -1,0 +1,3 @@
+[submodule ".claude"]
+	path = .claude
+	url = https://gitlab.com/exclamationlabs/bclaridge/claudefiles.git
