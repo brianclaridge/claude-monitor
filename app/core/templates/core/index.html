@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Claude Monitor{% endblock %}
+
+{% block content %}
+<div>
+    <h1>Claude Monitor</h1>
+    <p>Django + HTMX application bootstrapped successfully.</p>
+
+    <!-- HTMX demo: click to load content -->
+    <button hx-get="{% url 'core:index' %}"
+            hx-target="#demo"
+            hx-swap="innerHTML">
+        Click to test HTMX
+    </button>
+
+    <div id="demo">
+        <p>HTMX target area</p>
+    </div>
+</div>
+{% endblock %}
